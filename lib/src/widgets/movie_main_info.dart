@@ -5,17 +5,15 @@ class MovieMainInfo extends StatelessWidget {
   const MovieMainInfo({
     Key? key,
     required this.movieImage,
-    required this.id,
     required this.title,
     required this.releaseDate,
     required this.voteAverage,
   }) : super(key: key);
 
   final String movieImage;
-  final int id;
   final String title;
   final String releaseDate;
-  final num voteAverage;
+  final String voteAverage;
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +59,7 @@ class MovieMainInfo extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      voteAverage.toString(),
+                      voteAverage,
                       style: TextStyle(
                         fontSize: UiConstants.releaseDateFontSize,
                         color: Colors.amber.shade300,

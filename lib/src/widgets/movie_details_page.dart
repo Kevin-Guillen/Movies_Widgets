@@ -19,7 +19,7 @@ class MovieDetailsPage extends StatelessWidget {
   final int id;
   final String title;
   final String releaseDate;
-  final num voteAverage;
+  final String voteAverage;
   final String overView;
 
   @override
@@ -45,7 +45,6 @@ class MovieDetailsPage extends StatelessWidget {
                   ),
                   MovieMainInfo(
                     movieImage: posterPath,
-                    id: id,
                     title: title,
                     releaseDate: releaseDate,
                     voteAverage: voteAverage,
