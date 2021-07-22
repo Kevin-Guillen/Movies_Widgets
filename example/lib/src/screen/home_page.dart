@@ -29,10 +29,18 @@ class _HomePageState extends State<HomePage> {
         widgetRoute: movieDescription,
       ),
     );
+
     _routeList.add(
       WidgetRoute(
         title: UiConstants.movieMainInfoTitle,
         widgetRoute: movieMainInfo,
+      ),
+    );
+
+    _routeList.add(
+      WidgetRoute(
+        title: UiConstants.movieDetailsImageTitle,
+        widgetRoute: movieDetailsImage,
       ),
     );
 

@@ -20,7 +20,6 @@ class NavigationRoutes {
               ),
             ),
             body: Container(
-              color: Colors.black87,
               child: CustomScrollView(
                 slivers: [
                   CustomAppBar(
@@ -61,13 +60,27 @@ class NavigationRoutes {
                 children: [
                   Container(
                     child: MovieMainInfo(
-                      movieImage: UiConstants.defaultMovieImage,
                       title: UiConstants.defaultMovieTitle,
                       releaseDate: UiConstants.defaultReleaseDate,
                       voteAverage: UiConstants.defaultVoteAverage,
                     ),
                   ),
                 ],
+              ),
+            ),
+          ),
+        );
+      case movieDetailsImage:
+        return MaterialPageRoute(
+          builder: (context) => Scaffold(
+            appBar: AppBar(
+              title: Text(
+                UiConstants.movieDetailsImageTitle,
+              ),
+            ),
+            body: Container(
+              child: MovieDetailsImage(
+                movieImage: UiConstants.defaultMovieImage,
               ),
             ),
           ),
