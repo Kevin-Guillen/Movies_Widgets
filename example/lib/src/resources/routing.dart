@@ -56,16 +56,12 @@ class NavigationRoutes {
             ),
             body: Container(
               color: Colors.black87,
-              child: Column(
-                children: [
-                  Container(
-                    child: MovieMainInfo(
-                      title: UiConstants.defaultMovieTitle,
-                      releaseDate: UiConstants.defaultReleaseDate,
-                      voteAverage: UiConstants.defaultVoteAverage,
-                    ),
-                  ),
-                ],
+              child: Container(
+                child: MovieMainInfo(
+                  title: UiConstants.defaultMovieTitle,
+                  releaseDate: UiConstants.defaultReleaseDate,
+                  voteAverage: UiConstants.defaultVoteAverage,
+                ),
               ),
             ),
           ),

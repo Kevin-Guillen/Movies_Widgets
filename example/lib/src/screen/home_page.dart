@@ -57,18 +57,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              UiConstants.appBarTitle,
-            ),
-          ],
+        title: Text(
+          UiConstants.appBarTitle,
         ),
       ),
       body: Container(
         color: Colors.black87,
-        alignment: Alignment.center,
         child: ListView.builder(
           itemCount: _widgetList.length,
           itemBuilder: (
@@ -90,16 +84,11 @@ class _HomePageState extends State<HomePage> {
                   height: UiConstants.containerHeight,
                   color: Colors.purple,
                   child: Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          _widgetList[index].title,
-                          style: TextStyle(
-                            fontSize: UiConstants.containerTitleFontSize,
-                          ),
-                        ),
-                      ],
+                    child: Text(
+                      _widgetList[index].title,
+                      style: TextStyle(
+                        fontSize: UiConstants.containerTitleFontSize,
+                      ),
                     ),
                   ),
                 ),
