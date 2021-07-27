@@ -1,27 +1,18 @@
-import 'package:flutter/material.dart';
 import 'package:movies_widgets/movies_project_widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:network_image_mock/network_image_mock.dart';
+import 'build_widget_method.dart';
 
 void main() {
-  Widget _buildWidget() {
-    return MaterialApp(
-      home: Scaffold(
-        body: MovieMainInfo(
-          releaseDate: '26/06/08',
-          voteAverage: '6.8',
-          title: 'Cars',
-        ),
-      ),
-    );
-  }
-
   testWidgets(
-    "it should generate the movie main info from details cards",
-    (WidgetTester tester) async {
-      await mockNetworkImagesFor(
-        () => tester.pumpWidget(
-          _buildWidget(),
+    "Should display the movie main info from details cards",
+    (tester) async {
+      await tester.pumpWidget(
+        buildWidget(
+          MovieMainInfo(
+            releaseDate: '26/06/08',
+            voteAverage: '6.8',
+            title: 'Cars',
+          ),
         ),
       );
       expect(
