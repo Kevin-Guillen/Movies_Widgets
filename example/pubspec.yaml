@@ -25,6 +25,9 @@ dependencies:
     sdk: flutter
   movies_widgets:
     path: ../
+  flutter_test:
+    sdk: flutter
+  network_image_mock: ^2.0.1
 
 
   # The following adds the Cupertino Icons font to your application.
