@@ -12,6 +12,7 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
+      automaticallyImplyLeading: false,
       expandedHeight: UiConstants.movieDetailsAppBarExpandedHeight,
       flexibleSpace: FlexibleSpaceBar(
         background: Image.network(
